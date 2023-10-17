@@ -22,8 +22,8 @@ const Clients = () => {
           {dataClients.map((item) => (
             <ClientsList
               key={item.id}
+              rang={item.rang}
               data={item}
-              color={item.color}
               shadowClass={item.shadowClass}
             />
           ))}
