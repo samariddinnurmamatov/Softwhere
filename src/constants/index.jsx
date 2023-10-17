@@ -1,4 +1,4 @@
-export const BannerImages = () => (
+const BannerImages = () => (
   <>
     <div className="absolute left-[585px] top-[150px]">
       <img src="/images/banner_yumaloq.png" alt="Nuqta" />
@@ -14,6 +14,7 @@ export const BannerImages = () => (
     </div>
   </>
 );
+export { BannerImages };
 
 
 const dataClients = [
@@ -53,13 +54,15 @@ const dataClients = [
     shadowClass: "shaddow5",
   },
 ];
+export { dataClients };
+
 
 const inputPlaceholders = [
   "What's your name?",
   "Your email",
   "Tell me about your project",
 ];
-
+export { inputPlaceholders };
 
 const dataServcies = [
   {
@@ -81,6 +84,7 @@ const dataServcies = [
     text: "New demos are continually added and buying a single license for Mak gives you access to all of what's shown below, plus everything that will be added in the future.",
   },
 ];
+export { dataServcies };
 
 const dataTestmonials = [
   {
@@ -138,8 +142,9 @@ const dataTestmonials = [
     text: "Mr",
   },
 ];
+export { dataTestmonials };
 
-export const TestMonialsImages = () => (
+const TestMonialsImages = () => (
   <>
     <div className="absolute left-[45px] top-[160px]">
       <img src="/images/testmonials_mask_img1.png" alt="Mack1" />
@@ -155,11 +160,4 @@ export const TestMonialsImages = () => (
     </div>
   </>
 );
-
-
-export default {
-  dataClients,
-  inputPlaceholders,
-  dataServcies,
-  dataTestmonials,
-};
+export { TestMonialsImages };
