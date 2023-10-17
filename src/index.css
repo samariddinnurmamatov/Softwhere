@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+.header_scrolled{
+  background-color: white;
+  z-index: 999;
+  transition: .5s;
+   box-shadow: 0px 18px 27px -20px rgba(34, 60, 80, 0.102);
+}
+
+.container {
+  width: 100% !important;
+  max-width: 1400px !important;
+  @apply px-[13px];
+}
+
+.four_zero_four_bg {
+    background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+    height: 400px;
+    background-position: center;
+    width: 100%;
+}
+
+.section-title::before {
+  content: '';
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background: #8643DC;
+}
+
+.text-decoration {
+  text-decoration: underline; /* Yoki istalgan kerakli stil */
+}
+
+
+.shaddow1{
+   box-shadow: 0px 10px 25px -8px rgba(255, 215, 233, 1);
+}
+.shaddow2{
+   box-shadow: 0px 13px 29px -8px rgba(202, 255, 225, 1);
+}
+.shaddow3{
+   box-shadow: 0px 15px 29px -8px rgba(221, 245, 255, 1);
+}
+.shaddow4{
+   box-shadow: 0px 13px 29px -8px rgba(255, 238, 201, 1);
+}
+.shaddow5{
+   box-shadow: 0px 13px 29px -8px rgba(219, 255, 195, 0.89);
+}
+.bgrang{
+  background: linear-gradient(180deg, rgba(188, 133, 255, 0.075) 0%, rgba(255, 177, 222, 0.095) 100%);
+
+}
+.bgrang1{
+  background: linear-gradient(10deg, rgba(203, 163, 255, 0.117) 0%, rgba(197, 255, 176, 0.174) 100%);
+}
+
+.bgrang2{
+  background: linear-gradient(180deg, rgba(188, 133, 255, 0.06) -8.54%, rgba(255, 230, 246, 0.164) 100%);
+}
+
+
+.work{
+  position: relative;
+  overflow: hidden;
+}
+.work img{
+    width: 100%;
+    transition: transform 0.5s;
+}
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(180deg, rgba(196, 196, 196, 0) 0%, #25202F 100%);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 20px;
+    font-size: 14px;
+    transition:  height 0.5s;
+}
+.work:hover img{
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 50%;
+}
+
+.bacground_aboutus_block{
+  background-image: url("../../../public/images/Group.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 64%;
+  height: auto;
+}
+
+.as {
+  transition: 0.9s;
+  animation: float 3.9s ease-in-out infinite;
+}
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0rem);
+  }
+  50% {
+    transform: translateY(1.9rem);
+  }
+}
+
+.slick-dots li.slick-active button::before{
+  color: #8643DC;
+}
