@@ -1,10 +1,11 @@
-import Mainheader from "./components/mainheader";
-import MainFooter from "./components/mainFooter";
+
 import { Outlet } from 'react-router-dom';
+import Mainheader from './components/mainheader';
+import Mainfoter from './components/mainfoter';
 
 const MainLayout = () => {
   const HeaderComponent = <Mainheader />;
-  const FooterComponent = <MainFooter />;
+  const FooterComponent = <Mainfoter />;
   // Bunaqa yozish sababi keyinchalik MainHeader Mobile bo'lsa ternary operator bilan tekshirib yozib ketsa bo'ladi
 
   return (

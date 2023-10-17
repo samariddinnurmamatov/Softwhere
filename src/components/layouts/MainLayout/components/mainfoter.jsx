@@ -21,7 +21,7 @@ SocialIcon.propTypes = {
   src: PropTypes.string.isRequired,
 };
 
-const MainFooter = React.memo(() => {
+const Mainfoter = React.memo(() => {
   return (
     <div className="container mx-auto py-12 mt-[70px]">
       <h2 className="font-semibold text-3xl text-center">Let’s be Friends</h2>
@@ -34,5 +34,5 @@ const MainFooter = React.memo(() => {
   );
 });
 
-MainFooter.displayName = "MainFooter";
-export default MainFooter;
+Mainfoter.displayName = "Mainfoter";
+export default Mainfoter;
